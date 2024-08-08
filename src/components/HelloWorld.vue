@@ -1,3 +1,4 @@
+<!--Завдання 5: Створіть окремий файл з компонентом, зареєструйте та додайте до проєкту.-->
 <template>
   <p class="title">
     {{ title }}
@@ -9,7 +10,7 @@ export default {
   name: 'HelloWorld',
   data() {
     return {
-      title: 'Hello World'
+      title: 'Hello World',
     }
   },
 }

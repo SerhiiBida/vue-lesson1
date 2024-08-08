@@ -4,7 +4,7 @@ const App = {
     data() {
         return {
             header: 'Welcome!',
-            counter: 0
+            counter: 0,
         }
     }
 };
@@ -16,5 +16,5 @@ Vue.createApp(App).mount('#app');
 const {reactive} = Vue;
 
 export const numberApp = reactive({
-    count: 0
+    count: 15
 })
