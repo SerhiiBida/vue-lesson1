@@ -18,12 +18,25 @@
     </header>
 
     <main>
+        <!--Завдання 4: Додайте в існуючий проект кнопку, яка буде змінювати значення вашої змінної в об'єкті Vue при кожному кліку.-->
+        <h2>
+            {{ counter }}
+        </h2>
+        <button @click="counter--">
+            -
+        </button>
+        <button @click="counter++">
+            +
+        </button>
+        <div id="components">
 
+        </div>
     </main>
 </div>
 
 <!--Завдання 1: Підключіть Vue 3 до вашого існуючого проекту, використовуючи CDN-посилання.-->
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue3-sfc-loader/dist/vue3-sfc-loader.js"></script>
+<script src="./js/main.js" type="module"></script>
 </body>
 </html>
