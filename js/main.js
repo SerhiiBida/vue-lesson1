@@ -6,10 +6,7 @@ const App = {
             header: 'Welcome!',
             counter: 0
         }
-    },
-    components: {
-        'HelloWorld': Vue.defineAsyncComponent(() => loadModule('./js/components/HelloWorld.vue', options))
-    },
+    }
 };
 
 Vue.createApp(App).mount('#app');
@@ -44,12 +41,14 @@ const Components = {
     name: 'Components',
     components: {
         'HelloWorld': Vue.defineAsyncComponent(() => loadModule('./js/components/HelloWorld.vue', options)),
-        'InputForm': Vue.defineAsyncComponent(() => loadModule('./js/components/InputForm.vue', options))
+        'InputForm': Vue.defineAsyncComponent(() => loadModule('./js/components/InputForm.vue', options)),
+        'Timer': Vue.defineAsyncComponent(() => loadModule('./js/components/Timer.vue', options))
     },
     template: `
         <div>
             <HelloWorld/>
             <InputForm/>
+            <Timer/>
         </div>
     `
 };
