@@ -43,11 +43,13 @@ const {loadModule} = window['vue3-sfc-loader'];
 const Components = {
     name: 'Components',
     components: {
-        'HelloWorld': Vue.defineAsyncComponent(() => loadModule('./js/components/HelloWorld.vue', options))
+        'HelloWorld': Vue.defineAsyncComponent(() => loadModule('./js/components/HelloWorld.vue', options)),
+        'InputForm': Vue.defineAsyncComponent(() => loadModule('./js/components/InputForm.vue', options))
     },
     template: `
         <div>
             <HelloWorld/>
+            <InputForm/>
         </div>
     `
 };
